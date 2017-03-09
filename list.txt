@@ -1,0 +1,58 @@
+[
+    {
+        "url": "http://www.manhuatai.com/douluodalu/", 
+        "latestChapter": "第178话 史莱克", 
+        "oldChapter": "第173话 海神岛", 
+        "id": 1, 
+        "name": "斗罗大陆"
+    }, 
+    {
+        "url": "http://www.chuiyao.com/manhua/3670/", 
+        "latestChapter": "第183话 造化春晖", 
+        "oldChapter": "第181话 结盟", 
+        "id": 2, 
+        "name": "斗破苍穹"
+    }, 
+    {
+        "url": "http://www.57mh.com/118/", 
+        "latestChapter": "89话", 
+        "oldChapter": "87话", 
+        "id": 3, 
+        "name": "进击的巨人"
+    }, 
+    {
+        "url": "http://ac.qq.com/Comic/comicInfo/id/531329", 
+        "latestChapter": "174：交换人质", 
+        "oldChapter": "170：站队", 
+        "id": 4, 
+        "name": "时空囚徒"
+    }, 
+    {
+        "url": "http://www.1kkk.com/manhua20874/", 
+        "latestChapter": "第56回", 
+        "oldChapter": "第51回", 
+        "id": 5, 
+        "name": "暗界追冥狩"
+    }, 
+    {
+        "url": "http://www.u17.com/comic/94607.html", 
+        "latestChapter": "九十话", 
+        "oldChapter": "九十二话 核试炼（32） 2017-03-03", 
+        "id": 6, 
+        "name": "迷失在世界尽头"
+    }, 
+    {
+        "url": "http://www.dmzj.com/info/guiwang.html", 
+        "latestChapter": "第82话中", 
+        "oldChapter": "第82话上", 
+        "id": 7, 
+        "name": "鬼王"
+    }, 
+    {
+        "url": "http://www.kuman.com/mh-1000254/", 
+        "latestChapter": "第7话 凶兵23", 
+        "oldChapter": "第4话 正义13", 
+        "id": 8, 
+        "name": "驭灵师"
+    }
+]
