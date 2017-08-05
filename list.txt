@@ -7,7 +7,7 @@
         "name": "斗罗大陆"
     }, 
     {
-        "url": "http://www.chuiyao.com/manhua/3670/", 
+        "url": "http://www.manhuatai.com/doupocangqiong/", 
         "latestChapter": "第183话 造化春晖", 
         "oldChapter": "第181话 结盟", 
         "id": 2, 
@@ -54,5 +54,12 @@
         "oldChapter": "第4话 正义13", 
         "id": 8, 
         "name": "驭灵师"
+    }, 
+    {
+        "url": "http://www.ikanman.com/comic/18892/", 
+        "latestChapter": "215话", 
+        "oldChapter": "205", 
+        "id": 9, 
+        "name": "爱神巧克力进行时"
     }
 ]

@@ -35,6 +35,17 @@ def getLatestChapter(url):
                 print '[-] get %s latestChapter error: %s' % (url, error)
             return False
 
+def test():
+    print getLatestChapter('http://ac.qq.com/Comic/ComicInfo/id/526501')
+    print getLatestChapter('http://www.dmzj.com/info/guiwang.html')
+    print getLatestChapter('http://www.kuman.com/mh-1000254/')
+    print getLatestChapter('http://www.manhuatai.com/zetianji/')
+    print getLatestChapter('http://www.u17.com/comic/119612.html')
+    print getLatestChapter('http://www.1kkk.com/manhua20874/')
+    print getLatestChapter('http://www.57mh.com/118/')
+    print getLatestChapter('http://www.ikanman.com/comic/18892/')
+
+
 def chapterControl(action, updateId = 0):
     jObject = fileToJson(listFile)
     array = []
@@ -103,16 +114,17 @@ if __name__ == '__main__':
                         default=20,
                         help='request timeout (default: 20);')
     args = parser.parse_args()
+    readall = args.readall
+    updateall = args.updateall
+    update = args.update
+    timeout = args.timeout
+    # test()
     if len(sys.argv) < 2:
         print 'usage: python', sys.argv[0], '-h'
         # chapterControl('readAll')
         # chapterControl('updateAll')
         # chapterControl('updateAny', 1)
         exit(0)
-    readall = args.readall
-    updateall = args.updateall
-    update = args.update
-    timeout = args.timeout
 
     if readall:
         chapterControl('readAll')

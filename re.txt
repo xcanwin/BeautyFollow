@@ -1,10 +1,10 @@
 {
-    "www.kuman.com": "最新话.*>(.*)</a>", 
+    "www.kuman.com": "id=\"lastRead\".*\\n.*title=\"(.*)\">", 
     "www.dmzj.com": "list_con_zj\">(.*)<.*\"new\"", 
-    "ac.qq.com": "最新话.*\\[(.*)\\]<", 
+    "ac.qq.com": "\"works-ft-new\" href=\".*\">\\[(.*)\\]<", 
     "www.u17.com": "\\n.*title=\"(.*)\"(.*\\n){10,16}.*get_comic_order()", 
     "www.57mh.com": "og:novel:latest_chapter_name.*=\"(.*)\"/><meta", 
-    "www.manhuatai.com": "topic1.{1,100}<a title=\"(.{1,30})\" href=\"", 
-    "www.chuiyao.com": "latest_chapter_name.*=\"(.*)\"", 
-    "www.1kkk.com": "sy_nr1 cplist_ullg\">.*class=\"tg\">(.*)</a>.*ff cplist_ullg"
+    "www.manhuatai.com": "og:novel:latest_chapter_name.*=\"(.*)\"><meta", 
+    "www.1kkk.com": "sy_nr1 cplist_ullg\">.*class=\"tg\">(.*)</a>.*ff cplist_ullg", 
+    "www.ikanman.com": "class=\"blue\">(.*)</a>.*book-intro"
 }
