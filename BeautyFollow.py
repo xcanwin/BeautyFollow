@@ -44,6 +44,7 @@ def test():
     print getLatestChapter('http://www.1kkk.com/manhua20874/')
     print getLatestChapter('http://www.57mh.com/118/')
     print getLatestChapter('http://www.ikanman.com/comic/18892/')
+    print getLatestChapter('http://www.dm5.com/manhua-yaren/')
 
 
 def chapterControl(action, updateId = 0):

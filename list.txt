@@ -61,5 +61,12 @@
         "oldChapter": "205", 
         "id": 9, 
         "name": "爱神巧克力进行时"
+    },
+    {
+        "url": "http://www.dm5.com/manhua-yaren/",
+        "latestChapter": "53话",
+        "oldChapter": "49",
+        "id": 10,
+        "name": "亚人"
     }
 ]

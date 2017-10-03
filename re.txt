@@ -6,5 +6,6 @@
     "www.57mh.com": "og:novel:latest_chapter_name.*=\"(.*)\"/><meta", 
     "www.manhuatai.com": "og:novel:latest_chapter_name.*=\"(.*)\"><meta", 
     "www.1kkk.com": "sy_nr1 cplist_ullg\">.*class=\"tg\">(.*)</a>.*ff cplist_ullg", 
-    "www.ikanman.com": "class=\"blue\">(.*)</a>.*book-intro"
+    "www.ikanman.com": "class=\"blue\">(.*)</a>.*book-intro",
+    "www.dm5.com": "class=\"nr7\">.{0,70}title=\"(.{0,20})\"><img"
 }
