@@ -15,7 +15,7 @@ def showByHtml(resultDict, source = ''):
     htmlResult = u''
     for name, value in resultDict.items():
         htmlResult += u'<tr><td>%s</td><td><a target="_blank" href="%s">%s</a></td><td>%s</td><td>%s</td></tr>\n' % (value['id'], value['url'], name, value['oldChapter'], value['latestChapter'])
-    showDemo = file('_showdemo.html', 'rb').read()
+    showDemo = '''<html><head><title>BeautyFollow show</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><style>body{width:600px;margin:40px auto;font-family:'trebuchet MS','Lucida sans',Arial;font-size:14px;color:#444;}table{*border-collapse:collapse;border-spacing:0;width:100%;border:solid #ccc 1px;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-webkit-box-shadow:0 1px 1px #ccc;-moz-box-shadow:0 1px 1px #ccc;box-shadow:0 1px 1px #ccc;}tr:hover{background:#fbf8e9;}td,th{border-left:1px solid #ccc;border-top:1px solid #ccc;padding:10px;text-align:left;}th{background-color:#dce9f9;}</style></head><body><h2>BeautyFollow show</h2><table><thead><tr><th>id</th><th>name</th><th>oldChapter</th><th>latestChapter</th></tr></thead>[result]</table></body></html>'''
     showDemo = showDemo.replace('[result]', htmlResult.encode('utf-8'))
     file('show%s.html' % source, 'wb').write(showDemo)
     print '[+] save as: show%s.html' % source
