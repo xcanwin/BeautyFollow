@@ -1,86 +1,74 @@
-[
-    {
+{
+    "驭灵师": {
         "url": "http://www.kuman.com/mh-1000254/", 
-        "latestChapter": "第7话 凶兵23", 
+        "latestChapter": "", 
         "oldChapter": "第4话 正义13", 
-        "id": 8, 
-        "name": "驭灵师"
+        "id": 1
     }, 
-    {
+    "鬼王": {
         "url": "http://www.dmzj.com/info/guiwang.html", 
-        "latestChapter": "第82话中", 
+        "latestChapter": "", 
         "oldChapter": "第82话上", 
-        "id": 7, 
-        "name": "鬼王"
+        "id": 2
     }, 
-    {
+    "时空囚徒": {
         "url": "http://ac.qq.com/Comic/comicInfo/id/531329", 
-        "latestChapter": "174：交换人质", 
+        "latestChapter": "", 
         "oldChapter": "170：站队", 
-        "id": 4, 
-        "name": "时空囚徒"
+        "id": 3
     }, 
-    {
+    "迷失在世界尽头": {
         "url": "http://www.u17.com/comic/94607.html", 
-        "latestChapter": "九十话", 
+        "latestChapter": "", 
         "oldChapter": "九十二话 核试炼（32） 2017-03-03", 
-        "id": 6, 
-        "name": "迷失在世界尽头"
+        "id": 4
     }, 
-    {
+    "进击的巨人": {
         "url": "http://www.57mh.com/118/", 
-        "latestChapter": "89话", 
+        "latestChapter": "", 
         "oldChapter": "87话", 
-        "id": 3, 
-        "name": "进击的巨人"
+        "id": 5
     }, 
-    {
+    "斗罗大陆": {
         "url": "http://www.manhuatai.com/douluodalu/", 
-        "latestChapter": "第178话 史莱克", 
+        "latestChapter": "", 
         "oldChapter": "第173话 海神岛", 
-        "id": 1, 
-        "name": "斗罗大陆"
+        "id": 6
     }, 
-    {
+    "暗界追冥狩": {
         "url": "http://www.1kkk.com/manhua20874/", 
-        "latestChapter": "第56回", 
+        "latestChapter": "", 
         "oldChapter": "第51回", 
-        "id": 5, 
-        "name": "暗界追冥狩"
+        "id": 7
     }, 
-    {
+    "爱神巧克力进行时": {
         "url": "http://www.manhuagui.com/comic/18892/", 
         "latestChapter": "", 
         "oldChapter": "", 
-        "id": 2, 
-        "name": "爱神巧克力进行时"
+        "id": 8
     },
-    {
+    "亚人": {
         "url": "http://www.dm5.com/manhua-yaren/",
-        "latestChapter": "53话",
+        "latestChapter": "",
         "oldChapter": "49",
-        "id": 10,
-        "name": "亚人"
+        "id": 9
     }, 
-    {
+    "择天记": {
         "url": "http://www.iyouman.com/4342/", 
         "latestChapter": "", 
         "oldChapter": "", 
-        "id": 9, 
-        "name": "择天记"
+        "id": 10
     }, 
-    {
+    "女汉子调教记": {
         "url": "http://www.pufei.net/manhua/288/", 
         "latestChapter": "", 
         "oldChapter": "", 
-        "id": 9, 
-        "name": "女汉子调教记"
+        "id": 11
     }, 
-    {
+    "我的战斗女神": {
         "url": "http://www.buka.cn/detail/220570", 
         "latestChapter": "", 
         "oldChapter": "", 
-        "id": 9, 
-        "name": "我的战斗女神"
+        "id": 12
     }
-]
+}
