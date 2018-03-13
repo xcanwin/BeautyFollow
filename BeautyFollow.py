@@ -82,6 +82,18 @@ def getCharset(rc):
         charset = 'utf-8'
     return charset
 
+def clearChapter(chapter):
+    chapter3 = re.sub(r'\d{4}-\d{2}-\d{2}', '', chapter)
+    chapter2 = chapter3.replace(u'（', u'(').replace(u'）', u')').replace(u'：', u':').replace(u'。', u'.').replace(u'第', u'<').replace(u'、', u'>').replace(u'回', u'>').replace(u'话', u'>').replace(u'集', u'>').replace(u'【', u'').replace(u'】', u'')
+    r = re.search(r'<?(.+?)[-|:|,|.|\s|>]', chapter2)
+    if r:
+        chapter2 = r.group(1)
+    for l2 in chapter2:
+        if not l2 in u'0123456789〇一二三四五六七八九零壹贰叁肆伍陆柒捌玖两①②③④⑤⑥⑦⑧⑨㈠㈡㈢㈣㈤㈥㈦㈧㈨⑴⑵⑶⑷⑸⑹⑺⑻⑼⒈⒉⒊⒋⒌⒍⒎⒏⒐十拾百佰千仟万':
+            chapter2 = chapter3
+            break
+    return chapter2
+
 def getLatestChapter(url):
     regexps = fileToJson(reFile)
     for key in regexps.keys():
@@ -92,8 +104,9 @@ def getLatestChapter(url):
                 #print rc
                 regexp = regexps[key].encode('utf-8')
                 matchObj2 = re.search(regexp, rc)
-                latestChapter = matchObj2.group('chapter').strip()
-                return latestChapter.decode(getCharset(rc))
+                latestChapter = matchObj2.group('chapter').strip().decode(getCharset(rc))
+                latestChapter2 = clearChapter(latestChapter)
+                return latestChapter + u'<br><hr>' + latestChapter2
             except Exception, e:
                 error = str(e)
                 if error.find('timed out')>-1:
