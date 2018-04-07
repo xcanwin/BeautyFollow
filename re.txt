@@ -10,5 +10,6 @@
     "www.dm5.com": "chapterlistload\">.*?target=\"_blank\" >(?P<chapter>.*?)<span>",
     "www.iyouman.com": "og:novel:latest_chapter_name\" content=\"(?P<chapter>.*?)\"",
     "www.pufei.net": "class=\"plist pmedium.*?title=\"(?P<chapter>.*?)\">",
-    "www.buka.cn": "id=\"episodes(.*\\n){5}(?P<chapter>.*?)<"
+    "www.buka.cn": "id=\"episodes(.*\\n){5}(?P<chapter>.*?)<",
+    "www.kanman.com": "og:novel:latest_chapter_name\" content=\"(?P<chapter>.*?)\""
 }

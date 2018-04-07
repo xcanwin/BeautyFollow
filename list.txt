@@ -70,5 +70,11 @@
         "latestChapter": "", 
         "oldChapter": "", 
         "id": 12
+    }, 
+    "黑瞳": {
+        "url": "http://www.kanman.com/9308/", 
+        "latestChapter": "", 
+        "oldChapter": "", 
+        "id": 13
     }
 }

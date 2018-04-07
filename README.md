@@ -1,10 +1,10 @@
 # BeautyFollow
-## Purpose
+## 简介
 ```
-This is a tool for getting updates like comics, books and TV series.
+这是一款用于追剧、追漫、追小说的小工具，原理是通过事先配置好的正则表达式来匹配最新章节，并且输出界面较为友好的html展示页面。目前支持解析360浏览器的书签。
 ```
 
-## usage:
+## 用法
 ```
 usage: BeautyFollow.py [-h] [-R] [-U] [-u UPDATE] [-t TIMEOUT]
                        [-b GETBOOKMARK] [-f LISTFILE] [-s]

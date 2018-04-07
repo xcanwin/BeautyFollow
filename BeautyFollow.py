@@ -27,15 +27,15 @@ def showByHtml(resultDict, source = ''):
 def compatible360se():
     #'X:\\Program Files\\360se\\360se6\\User Data\\Default\\XXXX\\Bookmarks'
     try:
-        key = _winreg.OpenKey(_winreg.HKEY_CLASSES_ROOT, r"360seURL\\Application")
+        key = _winreg.OpenKey(_winreg.HKEY_CLASSES_ROOT, r"360seURL\\DefaultIcon")
     except Exception,e:
         print str(e)
         if '[Error 2]' in str(e):
             print '[-] error: There are no 360 browsers.'
         else:
             print '[-] error: There are other errors.'
-        return 0
-    regValue, regType = _winreg.QueryValueEx(key,"ApplicationIcon")
+        exit()
+    regValue, regType = _winreg.QueryValueEx(key,"")
     userData360se = regValue[0:regValue.rfind('Application')] + 'User Data\\'
     # print userData360se
     localState = userData360se + 'Local State'
@@ -60,7 +60,7 @@ def compatible360se():
     rdStr = json.dumps(resultDict, ensure_ascii = False, indent = 4).encode('utf-8')
     file(listFile, 'wb').write(rdStr)
     print '[+] save as:', listFile
-    showByHtml(resultDict, '360se')
+    showByHtml(resultDict, listFile)
 
 def fileToJson(filename):
     jStr = file(filename, 'rb').read()
@@ -90,9 +90,17 @@ def clearChapter(chapter):
             break
     return chapter2
 
-def getLatestChapter(url):
+def getLatestChapter(url, testRegexp = ''):
     regexps = fileToJson(reFile)
+    enumReFlag = True
     for key in regexps.keys():
+        if testRegexp:
+            key = url
+            regexps[key] = testRegexp
+            if enumReFlag:
+                enumReFlag = False
+            else:
+                break
         if url.find(key)>-1:
             try:
                 r = requests.get(url, timeout=timeout)
@@ -110,7 +118,9 @@ def getLatestChapter(url):
                 elif error.find('NoneType')>-1:
                     error = 'regexp can\'t match'
                 print '[-] get %s latestChapter error: %s' % (url, error)
-            return False
+            return ''
+    print '[-]', url, 'not found in regexps'
+    return ''
 
 def test():
     print getLatestChapter('http://www.kuman.com/mh-1000254/')
@@ -125,6 +135,8 @@ def test():
     print getLatestChapter('http://www.iyouman.com/4342/')
     print getLatestChapter('http://www.pufei.net/manhua/288/')
     print getLatestChapter('http://www.buka.cn/detail/220570')
+    print getLatestChapter('http://www.kanman.com/9308/')
+    exit(0)
 
 
 def chapterControl(action, updateId = 0):
